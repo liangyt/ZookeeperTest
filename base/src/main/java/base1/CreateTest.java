@@ -68,6 +68,7 @@ public class CreateTest {
     }
 
     public static void statCreate(ZooKeeper zk, String path) throws KeeperException, InterruptedException {
+        // 用于保存节点创建完成后的状态信息
         Stat stat = new Stat();
         String p = zk.create(
                 path,
@@ -101,7 +102,7 @@ public class CreateTest {
                 "带自定义状态".getBytes(),
                 ZooDefs.Ids.OPEN_ACL_UNSAFE,
                 CreateMode.PERSISTENT,
-                new BaseStringCallback(),
+                new BaseStringCallback(), // 节点创建完成的回调
                 "我是异步创建节点"
         );
     }

@@ -13,8 +13,6 @@ import org.apache.zookeeper.data.Stat;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
