@@ -17,5 +17,5 @@ public interface Lock {
     /**
      * 释放锁
      */
-    void unlock() throws Exception;
+    void unLock() throws Exception;
 }

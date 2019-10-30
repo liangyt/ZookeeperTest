@@ -41,7 +41,7 @@ public class LockTest {
             lock.lock();
             System.out.println("i get lock ->" + sleepTime);
             Thread.sleep(sleepTime);
-            lock.unlock();
+            lock.unLock();
             System.out.println("i unlock ->" + sleepTime);
         } catch (Exception e) {
             e.printStackTrace();

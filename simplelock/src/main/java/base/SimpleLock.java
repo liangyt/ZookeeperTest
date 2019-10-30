@@ -8,7 +8,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.stream.Collectors;
 
 /**
- * 描述：实现锁
+ * 描述：这是实现一个简单的排它锁
  * 作者：liangyongtong
  * 日期：2019/10/21 4:29 PM
  * 类名：SimpleLock
@@ -112,7 +112,7 @@ public class SimpleLock implements Lock {
     }
 
     @Override
-    public void unlock() throws Exception {
+    public void unLock() throws Exception {
         // 默认数据版本为 0
         zk.delete(lockNode, 0);
     }
